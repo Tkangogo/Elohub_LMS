@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCanvas LMS</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="app-shell">
+
+    <!-- Main LMS Application Shell -->
+    <div id="lms-app">
+
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <ion-icon name="school"></ion-icon>
+                <span>MyCanvas</span>
+            </div>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="dashboard/dashboard.html" target="content-frame" class="nav-item active">
+                        <ion-icon name="grid-outline"></ion-icon>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="coursemarks/coursemarks.html" target="content-frame" class="nav-item">
+                        <ion-icon name="ribbon-outline"></ion-icon>
+                        <span>Coursemarks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="payments/payments.html" target="content-frame" class="nav-item">
+                        <ion-icon name="wallet-outline"></ion-icon>
+                        <span>Payments</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="events/events.html" target="content-frame" class="nav-item">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                        <span>Events</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="community/community.html" target="content-frame" class="nav-item">
+                        <ion-icon name="people-outline"></ion-icon>
+                        <span>Community</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Added Logout logic directly to click -->
+            <div class="user-profile">
+                <div class="avatar" id="user-avatar">?</div>
+                <div class="user-info">
+                    <h4 id="display-name">Loading...</h4>
+                    <p id="display-email">Student</p>
+                </div>
+                <div style="margin-left:auto; cursor:pointer;"
+                    onclick="localStorage.removeItem('lmsUser'); window.location.href='login/login.html';">
+                    <ion-icon name="log-out-outline" title="Logout"></ion-icon>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content Area (Iframe) -->
+        <main class="main-content">
+            <iframe name="content-frame" id="content-frame" src="dashboard/dashboard.html"
+                title="Content Area"></iframe>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
