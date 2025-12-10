@@ -123,6 +123,12 @@ h1 {
     letter-spacing: 0.05em;
 }
 
+.tag.tech_function {
+    background: #e0e7ff;
+    color: #4338ca;
+}
+
+
 .tag.exam {
     background: #fee2e2;
     color: #b91c1c;
