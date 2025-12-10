@@ -13,12 +13,58 @@
 
 <body>
 
-    <div style="padding: 2rem;">
-        <h1>Events Module</h1>
-        <p style="color: var(--text-muted);">Content to be added by Collaborator D.</p>
+    <div class="events-container">
+        <header>
+            <h1>Schedule & Deadlines</h1>
+        </header>
+
+        <div class="timeline">
+
+            <!-- Event 1 -->
+            <div class="event-item">
+                <div class="date-box">
+                    <span class="day">28</span>
+                    <span class="month">OCT</span>
+                </div>
+                <div class="content-box">
+                    <div class="tag exam">EXAM</div>
+                    <h3>Calculus Midterm</h3>
+                    <p class="time"><ion-icon name="time-outline"></ion-icon> 09:00 AM - 11:30 AM</p>
+                    <p class="loc">Room 304, Science Block</p>
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event-item">
+                <div class="date-box">
+                    <span class="day">02</span>
+                    <span class="month">NOV</span>
+                </div>
+                <div class="content-box">
+                    <div class="tag assignment">ASSIGNMENT</div>
+                    <h3>History Essay Submission</h3>
+                    <p class="time"><ion-icon name="alert-circle-outline"></ion-icon> Deadline: 11:59 PM</p>
+                    <p class="loc">Online Portal</p>
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="event-item">
+                <div class="date-box">
+                    <span class="day">05</span>
+                    <span class="month">NOV</span>
+                </div>
+                <div class="content-box">
+                    <div class="tag group">GROUP WORK</div>
+                    <h3>Project Presentation Prep</h3>
+                    <p class="time"><ion-icon name="people-outline"></ion-icon> 02:00 PM - 04:00 PM</p>
+                    <p class="loc">Library, Study Room A</p>
+                </div>
+            </div>
+
+        </div>
     </div>
 
-    <!-- Connect to Module Specific Logic -->
     <script src="events.js"></script>
 </body>
 
