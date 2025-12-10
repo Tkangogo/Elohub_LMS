@@ -3,94 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Dashboard - Elohub LMS</title>
-    <!-- Connect to Module Specific Styles -->
+    <title>Dashboard - Elohub LMS</title>
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-    <!-- Top Navbar -->
-    <nav class="navbar">
-        <div class="logo">Elohub LMS</div>
-        <div class="user-avatar">
-            <img src="https://via.placeholder.com/40x40?text=U" alt="User Avatar">
-        </div>
-    </nav>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <h1>Welcome,!</h1>
+        </section>
 
-    <!-- Main Container -->
-    <div class="main-container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <ul class="sidebar-menu">
-                <li class="sidebar-item active">
-                    <a href="#dashboard">Dashboard</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#courses">Courses</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#payments">Payments</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#events">Events</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#community">Community</a>
-                </li>
-            </ul>
-        </aside>
+        <!-- Info Cards -->
+        <section class="info-cards">
+            <div class="card">
+                <h3>5</h3>
+                <p>Courses Enrolled</p>
+            </div>
+            <div class="card">
+                <h3>12</h3>
+                <p>Completed Assignments</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>$250</h3>
+                <p>Pending Payments</p>
+            </div>
+            <div class="card">
+                <h3>3</h3>
+                <p>Notifications</p>
+            </div>
+        </section>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <!-- Welcome Section -->
-            <section class="welcome-section">
-                <h1>Welcome, John Doe!</h1>
-            </section>
+        <!-- Upcoming Events -->
+        <section class="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <div class="events-cards">
+                <div class="event-card">
+                    <h4>Web Development Workshop</h4>
+                    <p>Date: Dec 9, 2025<br>Time: 2:00 PM - 4:00 PM</p>
+                </div>
+                <div class="event-card">
+                    <h4>Career Fair</h4>
+                    <p>Date: Dec 20, 2025<br>Time: 10:00 AM - 3:00 PM</p>
+                </div>
+                <div class="event-card">
+                    <h4>Study Group Meeting</h4>
+                    <p>Date: Jan 18, 2025<br>Time: 6:00 PM - 8:00 PM</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-            <!-- Info Cards -->
-            <section class="info-cards">
-                <div class="card">
-                    <h3>5</h3>
-                    <p>Courses Enrolled</p>
-                </div>
-                <div class="card">
-                    <h3>12</h3>
-                    <p>Completed Assignments</p>
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="progress-fill"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>$250</h3>
-                    <p>Pending Payments</p>
-                </div>
-                <div class="card">
-                    <h3>3</h3>
-                    <p>Notifications</p>
-                </div>
-            </section>
-
-            <!-- Upcoming Events -->
-            <section class="upcoming-events">
-                <h2>Upcoming Events</h2>
-                <div class="events-cards">
-                    <div class="event-card">
-                        <h4>Web Development Workshop</h4>
-                        <p>Date: Oct 15, 2023<br>Time: 2:00 PM - 4:00 PM</p>
-                    </div>
-                    <div class="event-card">
-                        <h4>Career Fair</h4>
-                        <p>Date: Oct 20, 2023<br>Time: 10:00 AM - 3:00 PM</p>
-                    </div>
-                    <div class="event-card">
-                        <h4>Study Group Meeting</h4>
-                        <p>Date: Oct 18, 2023<br>Time: 6:00 PM - 8:00 PM</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
-
-    <!-- Connect to Module Specific Logic -->
     <script src="dashboard.js"></script>
 </body>
 </html>

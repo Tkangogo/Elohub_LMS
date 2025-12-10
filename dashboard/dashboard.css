@@ -3,8 +3,6 @@
 
 :root {
     --primary-bg: #F8F8F8;
-    --sidebar-bg: #1E1E2F;
-    --sidebar-hover: #2A2A3F;
     --card-gradient-start: #4F46E5;
     --card-gradient-end: #6366F1;
     --text-color: #333;
@@ -26,77 +24,8 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--white);
-    padding: 1rem 2rem;
-    box-shadow: 0 2px 4px var(--shadow);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--card-gradient-start);
-}
-
-.user-avatar img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-/* Main Container */
-.main-container {
-    display: flex;
-    margin-top: 80px; /* Account for fixed navbar */
-}
-
-/* Sidebar */
-.sidebar {
-    width: 250px;
-    background-color: var(--sidebar-bg);
-    height: calc(100vh - 80px);
-    position: fixed;
-    left: 0;
-    top: 80px;
-    padding: 2rem 0;
-    overflow-y: auto;
-}
-
-.sidebar-menu {
-    list-style: none;
-}
-
-.sidebar-item {
-    margin-bottom: 0.5rem;
-}
-
-.sidebar-item a {
-    display: block;
-    padding: 1rem 2rem;
-    color: #B0B0C0;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.sidebar-item.active a,
-.sidebar-item:hover a {
-    background-color: var(--sidebar-hover);
-    color: var(--white);
-}
-
 /* Main Content */
 .main-content {
-    flex: 1;
-    margin-left: 250px;
     padding: 2rem;
 }
 
@@ -194,15 +123,8 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: static;
-        margin-top: 0;
-    }
-
     .main-content {
-        margin-left: 0;
+        padding: 1rem;
     }
 
     .info-cards {
